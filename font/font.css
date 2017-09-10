@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'Hello-August Hand';
+  src: url('Hello-August Hand.eot');
+  src: url('Hello-August Hand.woff2') format('woff2'),
+       url('Hello-August Hand.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelloAugustHand';
+  src: url('HelloAugustHand.woff') format('woff'),
+       url('HelloAugustHand.ttf') format('truetype'),
+       url('HelloAugustHand.svg#HelloAugustHand') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+

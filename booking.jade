@@ -1,0 +1,100 @@
+doctype html
+html
+	title booking
+	include meta
+//- head
+//- 	include meta
+body
+	include t_header
+	.formPage.page
+		.bg
+		.mainContainer.thinContainer
+			h1.pageTitle.wTxt Plan to Meet Us
+			
+			form
+				.whiteBox.fadeInBox
+					.qBox.mb_b
+						h1 Which Exhibition ?
+						.btnBox.difBox.mt_s
+							.pBtn
+								input(type='radio',name="exhibition")#exhibition1
+								label(for='exhibition1')
+									h1 11-13 Oct
+									h2 Intertextile
+										br
+										| Shanghai
+							.pBtn
+								input(type='radio',name="exhibition")#exhibition2
+								label(for='exhibition2')
+									h1 16-18 Oct
+									h2.mt_ss TITAS TAIPEI
+					.qBox.mb_b
+						h1 Which Date ?
+						.btnBox.difBox.mt_s.threeRowBox
+							.pBtn
+								input(type='radio',name="date")#date16Oct
+								label(for='date16Oct')
+									h2 16 Oct
+							.pBtn
+								input(type='radio',name="date")#date17Oct
+								label(for='date17Oct')
+									h2 17 Oct
+							.pBtn
+								input(type='radio',name="date")#date18Oct
+								label(for='date18Oct')
+									h2 18 Oct	
+
+					.qBox.mb_b
+						h1 Which Time ?
+						.btnBox.difBox.mt_s.threeRowBox
+							.pBtn
+								input(type='radio',name="time")#time9_10
+								label(for='time9_10')
+									h2 9:00-10:00
+							.pBtn
+								input(type='radio',name="time")#time10_11
+								label(for='time10_11')
+									h2 10:00-11:00
+							.pBtn
+								input(type='radio',name="time")#time11_12
+								label(for='time11_12')
+									h2 11:00-12:00
+							.pBtn
+								input(type='radio',name="time")#time12_13
+								label(for='time12_13')
+									h2 12:00-13:00
+							.pBtn
+								input(type='radio',name="time")#time13_14
+								label(for='time13_14')
+									h2 13:00-14:00
+							.pBtn
+								input(type='radio',name="time")#time14_15
+								label(for='time14_15')
+									h2 14:00-15:00
+							.pBtn
+								input(type='radio',name="time")#time15_16
+								label(for='time15_16')
+									h2 15:00-16:00
+							.pBtn
+								input(type='radio',name="time")#time16_17
+								label(for='time16_17')
+									h2 16:00-17:00
+							.pBtn
+								label
+
+				.whiteBox.fadeInBox
+					h1 Contact Information
+					include t_form
+		include t_rulePop
+		
+	#footer
+		.f1
+		.f2
+
+	//- .loadPicWrap(style='display:none')
+	//- 	//- img(src='images/arr.png')
+
+	
+	script(type='text/javascript', src='js/index.js')
+	
+

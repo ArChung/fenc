@@ -1,0 +1,57 @@
+
+h2.mt_s Name*
+input(type='text',name='name')
+h2 Company*
+input(type='text',name='companyme')
+h2 Job Title
+input(type='text',name='job_title')
+h2 Phone Number
+input(type='tel',name='phone')
+h2 Email*
+input(type='email',name='email')
+h2 Best way to contact
+.btnBox.difBox.mt_s.threeRowBox
+	.pBtn
+		input(type='radio',name="contactWay")#byPhone
+		label(for='byPhone')
+			h2 phone
+	.pBtn
+		input(type='radio',name="contactWay")#byMail
+		label(for='byMail')
+			h2 mail
+h2 Area of Interest*
+.btnBox.difBox.mt_s.threeRowBox
+	.pBtn
+		input(type='radio',name="interest")#PET_chip
+		label(for='PET_chip')
+			h2 PET chip
+	.pBtn
+		input(type='radio',name="interest")#dilament
+		label(for='dilament')
+			h2 Filament
+	.pBtn
+		input(type='radio',name="interest")#staple_Fiber
+		label(for='staple_Fiber')
+			h2 Staple Fiber
+	.pBtn
+		input(type='radio',name="interest")#spun_Yarn
+		label(for='spun_Yarn')
+			h2 Spun Yarn
+	.pBtn
+		input(type='radio',name="interest")#fabric
+		label(for='fabric')
+			h2 Fabric
+	.pBtn
+		input(type='radio',name="interest")#garment
+		label(for='garment')
+			h2 Garment
+h2 Additional Comments
+textarea(name='additional_comments')
+h4
+	| By click submit , you confirm that you accept the
+	a.underline.popBtn(data-target='rulePop',href='javascript: void(0)',target='_blank') Terms of Use
+input(type='submit',value='SUBMIT').blackBtn
+
+
+
+

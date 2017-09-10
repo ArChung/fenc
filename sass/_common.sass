@@ -1,0 +1,357 @@
+
+@font-face 
+	font-family: 'HelloAugustHand'
+	src: url('../font/HelloAugustHand.woff') format('woff'),url('../font/HelloAugustHand.ttf') format('truetype'),url('../font/HelloAugustHand.svg#HelloAugustHand') format('svg')
+	font-weight: normal
+	font-style: normal
+a:hover 
+	text-decoration: none
+.td_u
+	text-decoration: underline
+.handTxt
+	font-family: 'HelloAugustHand'
+#header 
+	position: fixed
+	top: 0
+	left: 0
+	z-index: 20
+	.menuBtn
+		position: absolute
+		+bg('menu.png')
+		top: 30px
+		left: 30px
+		cursor: pointer
+	.menuPop
+		position: fixed
+		z-index: 100
+		width: 100%
+		height: 100%
+		background-color: #0c316a
+		+divGoVerticalCenter_forMom
+
+		.clozBtn 
+			+bg('clozBtn_w.png')
+			position: absolute
+			top: 30px
+			left: 30px
+			cursor: pointer
+		.menuContainer
+
+			+divGoVerticalCenter_forKid
+			width: 99.5%
+			text-align: center
+			color: white
+			.mBtn 
+				display: block
+				font-size: 2.4rem
+				margin: 8px 0
+				
+				cursor: pointer
+				.txt
+					+opacity(0.5)
+				&:hover,&.active
+					.txt
+						+opacity(1)
+					text-decoration: none
+					.subMenu
+						max-height: 200px
+						padding: 15px 0
+						margin: 15px 0
+
+				.subMenu
+					width: 100%
+					padding: 0
+					background-color: #102c58
+					overflow: hidden
+					max-height: 0
+					margin: 0
+					+dTime(0.6s)
+					.mBtn 
+						font-size: 2rem
+						.txt
+							+opacity(0.5)
+						&:hover,&.active
+							.txt
+								+opacity(1)
+#footer 
+	position: fixed
+	bottom: 0
+	left: 0
+	width: 100%
+	.f1
+		+bg('cr01.png')
+		position: absolute
+		left: 25px
+		bottom: 15px
+	.f2 
+		+bg('cr02.png')
+		position: absolute
+		right: 25px
+		bottom: 15px
+
+			
+.page 
+	width: 100%
+	min-height: 100%
+	+coverBg
+	overflow: auto
+
+.mainContainer
+	margin: 50px auto
+	+phone 
+		margin: 120px auto
+		padding: 0 50px
+
+	&.thinContainer
+		width: 470px
+		+phone 	
+			width: 100%
+	.twoRowContainer 
+		+clearfix
+		width: 970px
+		margin: 0 auto
+		+phone 
+			width: 100%
+		.whiteBox
+			width: 470px
+			float: left
+			+phone 
+				width: 100%
+				float: none
+				margin-bottom: 50px
+.fadeInBox
+	+opacity(0)	 
+.underline
+	text-decoration: underline
+.pdBox
+	padding: 50px 60px
+
+.whiteBox
+	padding: 50px 60px
+	margin-top: 15px
+	background-color: white
+.picBgBox
+	+coverBg
+	padding: 40px 0
+	text-align: center
+	display: block
+	margin-bottom: 30px
+	&:after
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		width: 0%
+		height: 100%
+		background-color: rgba(black,0.3)
+		+dTime
+		z-index: 0
+	.txt 
+		position: relative
+		z-index: 1
+		+dTime
+	&:hover 
+		&:after
+			width: 100%
+		.txt 
+			+scale(1.05)
+
+	+phone 
+		min-width: 400px
+	&:hover 
+		text-decoration: none
+	.wBtn
+		margin: 0 30px
+		margin-top: 15px
+		height: 72px
+		line-height: 72px
+		color: black 
+		position: relative
+		padding-left: 90px
+		background-color: rgba(white,0.7)
+		text-align: left
+		font-size: 1.8rem
+		display: block
+		+dTime
+		&:after 
+			content: ''
+			position: absolute
+			+bg('bArr.png')
+			top: 50%
+			margin-top: -13px
+			left: 35px
+			+dTime
+		&:hover 
+			background-color: rgba(white,1)
+			text-decoration: none
+			&:after 
+				left: 45px
+
+.blueTxt 
+	color: $p
+h1
+	font-size: 24px
+	font-size: 2.4rem
+
+h2 
+	font-size: 16px
+	font-size: 1.6rem
+h4 
+	font-size: 9px
+	font-size: 0.9rem
+.fwb 
+	font-weight: bold
+.fwl 
+	font-weight: lighter
+.difBox
+	// justify-content: space-between 
+	display: -webkit-inline-flex
+	display: -moz-inline-flex
+	display: -ms-inline-flex
+	display: -o-inline-flex
+	display: inline-flex
+	width: 100%
+	align-items: stretch
+	flex-wrap: wrap
+
+
+
+.pBtn
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	align-items: stretch
+	margin-bottom: 15px
+	width: 48%
+	margin-right: 4%
+	&:nth-child(2n)
+		margin-right: 0%
+	input[type='radio']
+		display: none
+		&:checked + label
+			background-color: $p
+			color: white
+
+	label
+		+dTime
+		cursor: pointer
+		display: block
+		text-align: center
+		flex-wrap: wrap
+		border: 1px solid $lg
+		padding: 20px 25px
+		&:empty
+			height: 0
+			border: none
+			padding: 0
+		h2 
+			line-height: 1.2em
+
+
+.blackBtn
+	text-align: center
+	color: white
+	font-size: 2rem
+	height: 60px
+	line-height: 60px
+	background-color: #252525
+	display: block
+	width: 100%
+	margin-top: 20px
+	border: none 
+	cursor: pointer
+
+	&:hover 
+		+opacity(0.9)
+
+.whiteBtnArr
+	height: 72px
+	line-height: 72px
+	color: black 
+	position: relative
+	padding-left: 90px
+	background-color: rgba(white,0.7)
+	text-align: left
+	font-size: 1.8rem
+	display: block
+	font-weight: bold
+	cursor: pointer
+	+dTime
+	+phone 
+		height: 75px
+		line-height: 75px
+		padding-left: 120px
+	&:after 
+		content: ''
+		position: absolute
+		+bg('bArr.png')
+		top: 50%
+		margin-top: -13px
+		left: 35px
+		+dTime
+		+phone 
+			left: 50px
+	&:hover 
+		background-color: rgba(white,1)
+		text-decoration: none
+		&:after 
+			left: 45px
+			+phone 
+				left: 60px
+.whiteBtn
+	text-align: center
+	color: black
+	font-size: 2rem
+	height: 60px
+	cursor: pointer
+	line-height: 60px
+	background-color: white
+	display: block
+	width: 100%
+	margin-top: 20px
+	border: none 
+	&:hover 
+		color: black
+	&.purpleBtn
+		background-color: #6c7596
+		color: white
+		&:hover 
+			+opacity(0.9)
+	+phone 
+		height: 75px
+		line-height: 75px
+
+
+//----  icon ------//
+.playIcon 
+	+bg('playIcon.png')	
+	display: inline-block	
+
+.icon_download
+	+bg('icon_download.png')	
+	display: inline-block
+.playIcon_s
+	+bg('playIcon_s.png')	
+	display: inline-block	 
+	+phone 
+		+bg('playIcon_s_m.png')
+
+.arrIcon_s
+	+bg('linkIcon.png')
+	display: inline-block
+.icon_plan
+	+bg('icon_plan.png')
+	display: inline-block
+	vertical-align: text-top
+	+phone 
+		+bg('icon_plan_m.png')
+.icon_contact
+	+bg('icon_contact.png')
+	display: inline-block 
+	vertical-align: text-top
+	margin-top: -4px 
+	margin-right: 11px
+	+phone 
+		+bg('icon_contact_m.png')
