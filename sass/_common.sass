@@ -15,12 +15,62 @@ a:hover
 	top: 0
 	left: 0
 	z-index: 20
-	.menuBtn
+	.menuBtnBox
 		position: absolute
-		+bg('menu.png')
 		top: 30px
 		left: 30px
 		cursor: pointer
+		.mainIcon
+			+bg('icon.png')
+			+transform(translateX(-50%)) 
+			position: fixed
+			left: 50%
+			top: 30px
+			+opacity(0)
+			// +dTime(0.6s) 
+			
+			&.show 
+				+opacity(1)
+			&.scrollHide 
+				+dTime(0.6s)
+				+opacity(0)
+		.menuBtn
+			+bg('menu.png')
+		.menuTxt
+			font-size: 3rem
+			position: absolute
+			display: inline-block
+			&:hover 
+				color: white
+			left: 7px
+			+opacity(0)
+			top: 100px
+			// +dTime(0.6s)
+			white-space: nowrap
+			letter-spacing: 0.15em
+			+pc
+				+transform(translateX(-100%) rotate(-90deg)) 
+				+transform-origin(100%,0)
+				
+			+phone 
+				+transform(translateX(-50%)) 
+				position: fixed
+				left: 50%
+				// top: 25px
+				font-size: 2rem
+				top: 40px
+
+			&.show 
+				+opacity(1)
+				top: 60px
+				+phone 
+					top: 40px
+
+			&.scrollHide 
+				+dTime(0.6s)
+				+opacity(0)
+
+
 	.menuPop
 		position: fixed
 		z-index: 100
@@ -49,6 +99,7 @@ a:hover
 				cursor: pointer
 				.txt
 					+opacity(0.5)
+
 				&:hover,&.active
 					.txt
 						+opacity(1)
@@ -57,7 +108,12 @@ a:hover
 						max-height: 200px
 						padding: 15px 0
 						margin: 15px 0
-
+				+phone 
+					&.hasSub
+						.txt
+							+opacity(1)
+						.subMenu
+							max-height: 500px
 				.subMenu
 					width: 100%
 					padding: 0
@@ -78,6 +134,8 @@ a:hover
 	bottom: 0
 	left: 0
 	width: 100%
+	+phone 
+		position: relative
 	.f1
 		+bg('cr01.png')
 		position: absolute
@@ -89,7 +147,8 @@ a:hover
 		right: 25px
 		bottom: 15px
 
-			
+	
+
 .page 
 	width: 100%
 	min-height: 100%
@@ -97,7 +156,7 @@ a:hover
 	overflow: auto
 
 .mainContainer
-	margin: 50px auto
+	margin: 80px auto
 	+phone 
 		margin: 120px auto
 		padding: 0 50px
@@ -136,6 +195,7 @@ a:hover
 	text-align: center
 	display: block
 	margin-bottom: 30px
+	position: relative
 	&:after
 		content: ''
 		position: absolute
@@ -355,3 +415,13 @@ h4
 	margin-right: 11px
 	+phone 
 		+bg('icon_contact_m.png')
++pc 
+	#intercom-container 
+		.intercom-launcher-frame 
+			bottom: 30px!important
+	
+
+	// .intercom-messenger-frame 
+	// 	bottom: 30px!important
+	
+	

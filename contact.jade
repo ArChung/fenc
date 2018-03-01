@@ -1,6 +1,6 @@
 doctype html
 html
-	title Contact Us
+	
 	include meta
 //- head
 //- 	include meta
@@ -19,15 +19,15 @@ body
 				.f18 Angus Chou
 				.f18 周名澤
 				.f20.fwb.mt_b Email
-				a.f18(href='mailto:angus@fenc.com') angus@fenc.com
+				a.f18(href='mailto:angus@fenc.com',data-ga='contact_mailMe').gaBtn angus@fenc.com
 				
-				.f20.fwb.mt_b Phone
-				.f18 +886-2-2773-8000 # 1234
+				//- .f20.fwb.mt_b Phone
+				//- .f18 +886-2-2773-8000 # 1234
 				
-				.f20.fwb.mt_b Cellphone
-				.f18 +886-930-123-456
+				//- .f20.fwb.mt_b Cellphone
+				//- .f18 +886-930-123-456
 
-				.whiteBtn.purpleBtn.mt_b
+				.whiteBtn.purpleBtn.mt_b.contactOnlineBtn(data-ga='contact_contactOnline').gaBtn
 					i.icon_contact
 					| Contact Us Online
 

@@ -1,32 +1,36 @@
 
 
 #header 
-	.menuBtn 
+	.menuBtnBox
+		.menuBtn(data-ga='menuBtn').gaBtn
+		a(href='index.html').menuTxt.handTxt.wTxt.show Hello World, We're FENC
+		.phoneShow.mainIcon
 	.menuPop.hide
 		.clozBtn
 		.menuContainer 
-			a(href='index.html').mBtn
+			a(href='index.html',data-ga='menu_Home').gaBtn.mBtn
 				.txt Home
-			a(href='exhibition.html').mBtn
+			a(href='exhibition.html',data-ga='menu_ExhibitionInformation').gaBtn.mBtn
 				.txt Exhibition Information
-			a(href='booking.html').mBtn
+			a(href='booking.aspx?exhibition=1',data-ga='menu_PlantoVisit').gaBtn.mBtn
 				.txt Plan to Visit
-			a(href='javascript:void(0)',data-videoId='NoqFj8AAH9Q').mBtn.videoBtn
+			a(href='javascript:void(0)',data-videoId='NoqFj8AAH9Q',data-ga='menu_ExhibitionVideo').gaBtn.mBtn.videoBtn
 				.txt Exhibition Video
-			.mBtn
-				a(href='product.html').txt Products at Exhibition
+			.mBtn.hasSub
+				a(href='product.html',data-ga='menu_ProductsAtExhibition').gaBtn.txt Products at Exhibition
 				.subMenu
-					a(href='product.html?page=0').mBtn
+					a(href='product.html?page=0',data-ga='menu_SustainabilityProducts').gaBtn.mBtn
 						.txt Sustainability Products
-					a(href='product.html?page=1').mBtn
+					a(href='product.html?page=1',data-ga='menu_InnovationProducts').gaBtn.mBtn
 						.txt Innovation Products
-					a(href='product.html?page=2').mBtn
+					a(href='product.html?page=2',data-ga='menu_BestSellersProducts').gaBtn.mBtn
 						.txt Best Sellers Products
-					a(href='product.html?page=3').mBtn
+					a(href='product.html?page=3',data-ga='menu_ClassicProducts').gaBtn.mBtn
 						.txt Classic Products
-			a(href='beforeDownloadDM.html').mBtn
-				.txt Download Exhibition DM
-			a(href='contact.html').mBtn
+			//- a(href='beforeDownloadDM.html',data-ga='menu_').gaBtn.mBtn
+			a(href='brochure.html',data-ga='menu_DownloadBrochure').gaBtn.mBtn
+				.txt Download Brochure
+			a(href='contact.html',data-ga='menu_Contact Us').gaBtn.mBtn
 				.txt Contact Us
 .videoPop.popPage.hide
 	.videoBox

@@ -1,6 +1,6 @@
 doctype html
 html
-	title downloadDM
+	
 	include meta
 //- head
 //- 	include meta
@@ -14,9 +14,15 @@ body
 			form
 				.whiteBox.fadeInBox
 					h2.mb_b Download DM will be start after 3 seconds, if download not start, please click the botton
-					a(href='#').blackBtn DOWNLOAD DM
+					a(href='#',data-ga='downloadDM_downloadBtn').gaBtn.blackBtn DOWNLOAD DM
 					h3.ta_c.mt_s (File: dynafeed_ex.pdf/2.4MB)
-						
+					.mt_b.downloadDM_moreProductBox
+						.sideMenu.f18
+							h1 More Products in Exhibition
+							a.sBtn(data-ga='downloadDM_Sustainability',href='product.html?page=0').gaBtn Sustainability
+							a.sBtn(data-ga='downloadDM_Innovation',href='product.html?page=1').gaBtn Innovation
+							a.sBtn(data-ga='downloadDM_BestSellers',href='product.html?page=2').gaBtn Best Sellers
+							a.sBtn(data-ga='downloadDM_Classic',href='product.html?page=3').gaBtn Classic
 					
 
 		

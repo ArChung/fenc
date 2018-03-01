@@ -55,7 +55,14 @@ html
 #index
 	width: 100%
 	height: 100%
-
+	+phone
+		height: auto
+		#footer
+			position: absolute
+			.f1
+				bottom: 7px
+			.f2 
+				bottom: 7px
 	.scrollArr
 		position: fixed
 		bottom: 20px
@@ -64,7 +71,10 @@ html
 		+bg('arr_d.png')
 		+animation(arr 1.2s linear infinite)
 		display: none
-
+		+phone 
+			display: block
+			+bg('arr_d_m.png')
+			z-index: 10
 
 	+pc
 		overflow: hidden
@@ -99,8 +109,15 @@ html
 				&.channel_0 
 					.scrollArr
 						display: block
+
+			.p0 
+				.containerBg
+					+bgi('peopleBg.jpg')
 		+phone 
 			padding: 0
+			.p0 
+				.containerBg
+					+bgi('peopleBg_m.jpg')
 		.indexPhoneTxtBox
 			padding: 0 25px
 			.whiteBtn 
@@ -136,13 +153,13 @@ html
 					+divGoVerticalCenter_forKid
 					// padding: 15px
 					// background-color: rgba(black,0.3)
-				.title 
+				.title  
 					+scaleX(0.95)
 					&.bTitle 
 						font-size: 10rem
 						letter-spacing: 0.08em
 						+sHeight
-							font-size: 6rem
+							font-size: 7rem
 						+phone 
 							font-size: 6rem		
 					&.mTitle 
@@ -159,6 +176,13 @@ html
 							font-size: 5rem	
 						+sHeight
 							font-size: 5rem
+					&.ssTitle 
+						font-size: 6rem  
+						letter-spacing: 0.08em
+						+phone 
+							font-size: 4rem	
+						+sHeight
+							font-size: 4rem
 			&.threeBlockPage
 				+clearfix
 				.bBlock
@@ -203,6 +227,13 @@ html
 
 					+phone 
 						width: 100%
+					+pc
+						&:after 
+							content: ''
+							position: absolute
+							+bg('redDot.png')
+							left: 0
+							bottom: 20%
 				.subPageContainer
 					
 					float: left
@@ -298,13 +329,28 @@ html
 					color: #c0b67b
 					margin-top: 20px
 .formPage
- 
+	form 
+		.whiteBox 
+			> h1 
+				font-weight: bold
+			> h2 
+				font-weight: bold
+			.qBox 
+				> h1
+					font-weight: bold
+				> h2 
+					font-weight: bold
+
+
 	.bg 
 		position: fixed
 		width: 100%
 		height: 100%
 		z-index: -1
 		+bgi('peopleBg.jpg')
+		+phone 
+			+bgi('peopleBg_m.jpg')
+
 		+coverBg
 	.mainContainer
 
@@ -459,17 +505,31 @@ html
 #ProductPage
 	position: relative
 	.bg
-		+bgi('bg10.jpg')
+		+bgi('bg-sustainability.jpg')
 		position: fixed
 		width: 100%
 		height: 100%
 		z-index: -1
 		+coverBg
+		+dTime(0.6s)
+		&.ch0
+			+bgi('bg-sustainability.jpg')
+		&.ch1
+			+bgi('bg-innovation.jpg')
+		&.ch2
+			+bgi('bg-bestsellers.jpg')
+		&.ch3
+			+bgi('bg-classic.jpg')
+
 	
 	.mainContainer
 		width: 970px
 		position: relative
 		overflow: hidden
+		+pad
+			padding: 0 35px
+			width: 100%
+			padding-left: 100px	
 		.mainTitle
 			.categoryTxt
 				display: none
@@ -489,6 +549,9 @@ html
 			color: #767676
 			top: 170px
 			padding-left: 25px
+			+pad
+				left: 100%
+				margin-left: -185px
 			+phone 
 				position: relative
 				left: 0
@@ -523,15 +586,26 @@ html
 				display: block
 			.productBox
 				position: relative
-				margin-bottom: 40px
+				margin-bottom: 60px
 				+clearfix
+				+pad
+					width: calc(100% - 150px)
+				+phone 
+					width: 100%
 				.picBox
 					float: left
 					+coverBg
 					width: 470px
 					height: 470px
+					+pad
+						width: 50%
+						+aspect-ratio(1,1)
+						height: auto
+						max-height: 470px
 					+phone 
 						width: 100%
+						+aspect-ratio(1,1)
+						max-height: auto
 						float: none
 				.txtBox
 					float: left
@@ -540,6 +614,9 @@ html
 					min-height: 435px
 					padding: 40px 50px
 					margin-top: 55px
+					+pad
+						width: 50%
+						// +aspect-ratio(1,1.2)
 					+phone 
 						width: 100%
 						margin-top: 0
@@ -560,3 +637,16 @@ html
 							+phone 
 								top: 3px
 								margin-right: 15px
+.downloadDM_moreProductBox
+	.sBtn
+		cursor: pointer
+		margin-top: 15px	
+		display: block	
+		position: relative
+		padding-left: 40px
+		&:after 
+			content: ''
+			+bg('bArr_m.png')
+			position: absolute
+			top: 4px
+			left: 0								

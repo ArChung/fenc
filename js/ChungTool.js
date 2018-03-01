@@ -338,7 +338,9 @@ var simpleHide = simpleHide || {};
         }
 
         function touchMove(event) {
-            event.preventDefault();
+            if ($(window).width() > 768) {
+                event.preventDefault();
+            }
             if (event.targetTouches.length != 1) {
                 return false;
             } //單點觸控

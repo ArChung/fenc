@@ -1,4 +1,4 @@
-
+h2(style='color: #dc4242;font-weight:normal;') * required field
 h2.mt_s Name*
 input(type='text',name='name')
 h2 Company*
@@ -49,8 +49,8 @@ h2 Additional Comments
 textarea(name='additional_comments')
 h4
 	| By click submit , you confirm that you accept the
-	a.underline.popBtn(data-target='rulePop',href='javascript: void(0)',target='_blank') Terms of Use
-input(type='submit',value='SUBMIT').blackBtn
+	a.underline.popBtn(data-target='rulePop',href='javascript: void(0)',data-ga='form_ruleBtn').gaBtn Terms of Use
+input(type='submit',value='SUBMIT',data-ga='form_submit').gaBtn.blackBtn
 
 
 

@@ -1,28 +1,30 @@
 <!DOCTYPE html>
 <html>
-  <title>exhibition</title>
+  <title>Hello World, We’re FENC</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=640" user-scalable="0">
   <!-- hiding the Browser’s User Interface-->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="mobile-web-app-capable" content="yes">
   <!-- meta start-->
-  <meta name="title" content="">
-  <meta name="description" content="">
+  <meta name="title" content="Hello World, We’re FENC">
+  <meta name="description" content="2017 FENC Intertextile Shanghai &amp; TITAS Taipei Booths &amp; Products Information">
   <meta name="keywords" content="">
   <meta name="copyright" content="">
-  <link rel="image_src" href="">
+  <link rel="image_src" href="http://www.fenc.com/exhibition/images/fb.png">
   <!-- iOS 6-->
-  <meta name="apple-mobile-web-app-title" content="">
+  <meta name="apple-mobile-web-app-title" content="Hello World, We’re FENC">
   <!-- OG-->
-  <meta property="og:title" content="">
+  <meta property="og:title" content="Hello World, We’re FENC">
   <meta property="og:site_name" content="">
-  <meta property="og:description" content="">
+  <meta property="og:description" content="2017 FENC Intertextile Shanghai &amp; TITAS Taipei Booths &amp; Products Information">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="">
-  <meta property="og:url" content="">
+  <meta property="og:image" content="http://www.fenc.com/exhibition/images/fb.png">
+  <meta property="og:url" content="http://www.fenc.com/exhibition/">
   <meta property="fb:app_id" content="">
   <!-- css start-->
+  <link rel="SHORTCUT ICON" href="images/favicon.ico">
+  <link rel="icon" href="images/favicon.ico" type="image/ico">
   <link rel="stylesheet" href="css/default.css">
   <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700" rel="stylesheet">
   <!-- js start-->
@@ -42,25 +44,33 @@
 </html>
 <body>
   <div id="header"> 
-    <div class="menuBtn"> </div>
+    <div class="menuBtnBox">
+      <div data-ga="menuBtn" class="menuBtn gaBtn"></div><a href="index.html" class="menuTxt handTxt wTxt show">Hello World, We're FENC</a>
+      <div class="phoneShow mainIcon"></div>
+    </div>
     <div class="menuPop hide">
       <div class="clozBtn"></div>
-      <div class="menuContainer"> <a href="index.html" class="mBtn">
-          <div class="txt">Home</div></a><a href="exhibition.html" class="mBtn">
-          <div class="txt">Exhibition Information</div></a><a href="booking.html" class="mBtn">
-          <div class="txt">Plan to Visit</div></a><a href="javascript:void(0)" data-videoId="NoqFj8AAH9Q" class="mBtn videoBtn">
+      <div class="menuContainer"> <a href="index.html" data-ga="menu_Home" class="gaBtn mBtn">
+          <div class="txt">Home</div></a><a href="exhibition.html" data-ga="menu_ExhibitionInformation" class="gaBtn mBtn">
+          <div class="txt">Exhibition Information</div></a><a href="booking.aspx?exhibition=1" data-ga="menu_PlantoVisit" class="gaBtn mBtn">
+          <div class="txt">Plan to Visit</div></a><a href="javascript:void(0)" data-videoId="NoqFj8AAH9Q" data-ga="menu_ExhibitionVideo" class="gaBtn mBtn videoBtn">
           <div class="txt">Exhibition Video</div></a>
-        <div class="mBtn">
-          <div class="txt">Products at Exhibition</div>
-          <div class="subMenu"><a href="product.html?page=1" class="mBtn">
-              <div class="txt">Sustainability Products</div></a><a href="product.html?page=2" class="mBtn">
-              <div class="txt">Innovation Products</div></a><a href="product.html?page=3" class="mBtn">
-              <div class="txt">Best Sellers Products</div></a><a href="product.html?page=4" class="mBtn">
+        <div class="mBtn hasSub"><a href="product.html" data-ga="menu_ProductsAtExhibition" class="gaBtn txt">Products at Exhibition</a>
+          <div class="subMenu"><a href="product.html?page=0" data-ga="menu_SustainabilityProducts" class="gaBtn mBtn">
+              <div class="txt">Sustainability Products</div></a><a href="product.html?page=1" data-ga="menu_InnovationProducts" class="gaBtn mBtn">
+              <div class="txt">Innovation Products</div></a><a href="product.html?page=2" data-ga="menu_BestSellersProducts" class="gaBtn mBtn">
+              <div class="txt">Best Sellers Products</div></a><a href="product.html?page=3" data-ga="menu_ClassicProducts" class="gaBtn mBtn">
               <div class="txt">Classic Products</div></a></div>
-        </div><a href="beforeDownloadDM.html" class="mBtn">
-          <div class="txt">Download Exhibition DM</div></a><a href="contact.html" class="mBtn">
+        </div><a href="brochure.html" data-ga="menu_DownloadBrochure" class="gaBtn mBtn">
+          <div class="txt">Download Brochure</div></a><a href="contact.html" data-ga="menu_Contact Us" class="gaBtn mBtn">
           <div class="txt">Contact Us</div></a>
       </div>
+    </div>
+  </div>
+  <div class="videoPop popPage hide">
+    <div class="videoBox">
+      <div class="clozBtn popClozBtn"></div>
+      <div class="container"></div>
     </div>
   </div>
   <div id="exhibitionPage" class="formPage page">
@@ -77,7 +87,7 @@
           <div class="sContent">国家会展中心(上海)</div>
           <div class="sTitle">Booth Location</div>
           <div class="sContent"> <i>Hall 5.2H, </i><i class="bBgTxt"> Booth : E95</i></div>
-          <div class="linkBox"> <a href="#">Exhibition Booth Map</a><a href="#">Exhibition DM</a><a href="#">See on Google Map</a><a href="#">Official Website</a></div><a href="#" class="whiteBtn purpleBtn"><i class="icon_plan_w"></i>Plan To Meet Us</a>
+          <div class="linkBox"> <a href="http://intertextile-shanghai-apparel-fabrics-autumn.hk.messefrankfurt.com/content/dam/intertextile_shanghai_apparel_fabrics_autumn/file/en/ITSA2017%20halloverview.pdf" target="_blank" data-ga="exibition_intertextile_ExhibitionBoothMap" class="gaBtn">Exhibition Booth Map</a><a href="http://intertextile-shanghai-apparel-fabrics-autumn.hk.messefrankfurt.com/content/dam/intertextile_shanghai_apparel_fabrics_autumn/file/en/ITSA17_210x280_web.pdf" target="_blank" data-ga="exibition_intertextile_ExhibitionDM" class="gaBtn">Exhibition DM</a><a href="https://www.google.com.tw/maps/place/%E5%9B%BD%E5%AE%B6%E4%BC%9A%E5%B1%95%E4%B8%AD%E5%BF%83%EF%BC%88%E4%B8%8A%E6%B5%B7%EF%BC%89/@31.1927669,121.3017711,16z/data=!4m8!1m2!2m1!1z5Zu95a625Lya5bGV5Lit5b-DKOS4iua1tyk!3m4!1s0x0:0x34e72d3652924ccd!8m2!3d31.1901115!4d121.302554" target="_blank" data-ga="exibition_intertextile_GoogleMap" class="gaBtn">See on Google Map</a><a href="http://intertextile-shanghai-apparel-fabrics-autumn.hk.messefrankfurt.com/shanghai/zh-cn/visitors/welcome.html" target="_blank" data-ga="exibition_intertextile_OfficialWebsite" class="gaBtn">Official Website</a></div><a href="booking.aspx?exhibition=1" class="whiteBtn purpleBtn"><i class="icon_plan_w"></i>Plan To Meet Us</a>
         </div>
         <div class="whiteBox fadeInBox">
           <div class="f24">TITAS Taipei</div>
@@ -88,7 +98,7 @@
           <div class="sContent">台北南港展覽館</div>
           <div class="sTitle">Booth Location</div>
           <div class="sContent"> <i>Hall 1, 4F, </i><i class="bBgTxt"> Booth : M106</i></div>
-          <div class="linkBox"> <a href="#">Exhibition Booth Map</a><a href="#">Exhibition DM</a><a href="#">See on Google Map</a><a href="#">Official Website</a></div><a href="#" class="whiteBtn purpleBtn"><i class="icon_plan_w"></i>Plan To Meet Us</a>
+          <div class="linkBox"> <a href="http://www.titas.tw/2017/downloadfile/TITAS2017_map.pdf" target="_blank" data-ga="exibition_TITAS_ExhibitionBoothMap" class="gaBtn">Exhibition Booth Map</a><a href="http://www.titas.tw/2017/cht/showinfo/download/" target="_blank" data-ga="exibition_TITAS_ExhibitionDM" class="gaBtn">Exhibition DM</a><a href="https://www.google.com.tw/maps/place/%E5%8F%B0%E5%8C%97%E5%8D%97%E6%B8%AF%E5%B1%95%E8%A6%BD%E9%A4%A81%E9%A4%A8/@25.056602,121.6159273,17z/data=!3m1!4b1!4m5!3m4!1s0x3442ab57f02092dd:0x87862fa2121f7e46!8m2!3d25.056602!4d121.618116" target="_blank" data-ga="exibition_TITAS_GoogleMap" class="gaBtn">See on Google Map</a><a href="http://www.titas.tw/2017/cht/" target="_blank" data-ga="exibition_TITAS_OfficialWebsite" class="gaBtn">Official Website</a></div><a href="booking.aspx?exhibition=2" data-ga="exibition_PlanToMeetUs" class="gaBtn whiteBtn purpleBtn"><i class="icon_plan_w"></i>Plan To Meet Us</a>
         </div>
       </div>
     </div>

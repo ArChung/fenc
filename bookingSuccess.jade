@@ -1,6 +1,5 @@
 doctype html
 html
-	title booking succeess
 	include meta
 //- head
 //- 	include meta
@@ -25,27 +24,27 @@ body
 				
 			h1.pageTitle.wTxt.fadeInBox Read More	
 			.whiteBox.fadeInBox
-				a.picBgBox(href='#',style='background-image: url(images/demoBg1.png)')
+				a.picBgBox.videoBtn(href='#',style='background-image: url(images/demoBg1.jpg)',data-videoId='NoqFj8AAH9Q',data-ga='bookSuccess_WatchStoryVideo').gaBtn
 					.txt.wTxt
 						.playIcon
 						h2.mt_s Watch the Story Video
-				.picBgBox(style='background-image: url(images/demoBg4.png)')
+				.picBgBox(style='background-image: url(images/demoBg4.jpg)')
 					.txt.wTxt
 						.f40.handTxt Save the Ocean
 						h2 100% Ocean Recycled Yarn
-						a.wBtn(href='#') Ocean Recycled Yarn
-				.picBgBox(style='background-image: url(images/demoBg2.png)')
+						a.wBtn(href='product.html?page=0&rel=oceanRecycled',data-ga='bookSuccess_RecycledOceanPlastic').gaBtn Recycled Ocean Plastic
+				.picBgBox(style='background-image: url(images/demoBg2.jpg)')
 					.txt.wTxt
 						.f40.handTxt PFC-Free
 						h2 Superior Performance & Eco-friendly
-						a.wBtn(href='#') TopDry Zero
-						a.wBtn(href='#') TopClean
+						a.wBtn(href='product.html?page=1&rel=topDryZero',data-ga='bookSuccess_TopDryZero').gaBtn TopDry Zero
+						a.wBtn(href='product.html?page=1&rel=topClean',data-ga='bookSuccess_TopClean').gaBtn TopClean
 
-				.picBgBox(style='background-image: url(images/demoBg3.png)')
+				.picBgBox(style='background-image: url(images/demoBg3.jpg)')
 					.txt.wTxt
 						.f40.handTxt Smart Textile
 						h2 innovation , no limit
-						a.wBtn(href='#') DynaFeed Series
+						a.wBtn(href='product.html?page=1&rel=dynaFeed',data-ga='bookSuccess_DynaFeedSeries').gaBtn DynaFeed Series
 				
 		
 	#footer

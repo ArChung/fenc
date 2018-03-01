@@ -1,172 +1,178 @@
 doctype html
 html
-	include meta
-//- head
-//- 	include meta
-body
-	include t_header
-	#index
-		.mainContainer.channel_0
-			.scrollArr
-			.pageNav
-				.nav
-				.nav
-				.nav
-				.nav
-				.nav
-				.nav
-				.nav
-			.page.p0(style='background-image: url("images/peopleBg.jpg")')
-				.container.wTxt
-					.pageContent.hide
-						.title.handTxt.bTitle Hello World, We're FENC
-						.infoWrap.mt_b.aniDivTopIn
-							.info1
-							.info2
-						a(href='exhibition.html').moreBtn.aniDivTopIn
-							.arr
-							.txt.f16.td_u More Information
-						a(href='booking.html').whiteBtn.mt_b.aniDivTopIn
-							i.icon_plan
-							| Plan To Meet Us
-						.infoTxt.f14.aniDivTopIn Schedule at your leisure
-			
-			.page.p1.twoBlockPage
-				.container
-					.containerBg(style='background-image: url("images/bg01.jpg")')
-					.pageContent
-						.title.handTxt.wTxt.mTitle
-							.aniTxt We
-							.aniTxt exist
-							.aniTxt for
-							.aniTxt a
-							.aniTxt reason
-						
-						a.picBgBox.mt_b.phoneShow.videoBtn(href='javascript:void(0);',data-videoId='NoqFj8AAH9Q',style='background-image: url(images/demoBg1.png)')
-							.txt.wTxt
-								.playIcon_s
-								h2.mt_ss.f18 Watch the Story Video
-				.subPageContainer
-					.pageContent
-						h2.aniDivLeftIn Being a Global Supplier we believe the core reason for our existence is to innovate & create sustainable solutions essential for a better life, a cleaner environment & economic progress.
-						a.aniDivLeftIn.picBgBox.mt_b.videoBtn(href='javascript:void(0);',data-videoId='NoqFj8AAH9Q',style='background-image: url(images/demoBg1.png)')
-							.txt.wTxt
-								.playIcon_s
-								h2.mt_ss.f18 Watch the Story Video
-			.page.p2.threeBlockPage
-				.container.bBlock
-					.containerBg(style='background-image: url("images/bg05.jpg")')
-					.pageContent
-						.title.handTxt.wTxt.sTitle
-							.aniTxt Save the Ocean
-						h1.wTxt 100% Ocean Recycled Yarn
-						a.whiteBtnArr(href='#') Ocean Recycled Yarn
-				.bBlock
-					.container.sBlock
-						.containerBg(style='background-image: url("images/bg03.jpg")')
+	head 
+		include meta
+	body
+		include t_header
+		#index
+			.mainContainer.channel_0
+				.scrollArr
+				.pageNav
+					.nav(data-ga='index_sidePageNav1').gaBtn
+					.nav(data-ga='index_sidePageNav2').gaBtn
+					.nav(data-ga='index_sidePageNav3').gaBtn
+					.nav(data-ga='index_sidePageNav4').gaBtn
+					.nav(data-ga='index_sidePageNav5').gaBtn
+					.nav(data-ga='index_sidePageNav6').gaBtn
+					.nav(data-ga='index_sidePageNav7').gaBtn
+				.page.p0
+					.container.wTxt
+						.containerBg
+						.pageContent.hide
+							.title.handTxt.bTitle Hello World, We're FENC
+							.infoWrap.mt_b.aniDivTopIn
+								a(href='exhibition.html',data-ga='index_exibitionIcon1').gaBtn.info1
+								a(href='exhibition.html',data-ga='index_exibitionIcon2').gaBtn.info2
+							a(href='exhibition.html',data-ga='index_moreInfomation').gaBtn.moreBtn.aniDivTopIn
+								.arr
+								.txt.f16.td_u More Information
+							a(href='booking.aspx',data-ga='index_planToMeetUs').gaBtn.whiteBtn.mt_b.aniDivTopIn
+								i.icon_plan
+								| Plan To Meet Us
+							.infoTxt.f14.aniDivTopIn Schedule at your leisure
+					
+				.page.p1.twoBlockPage
+					.container
+						.containerBg(style='background-image: url("images/bg01.jpg")')
+						.pageContent
+							.title.handTxt.wTxt.mTitle
+								.aniTxt We
+								.aniTxt exist
+								.aniTxt for
+								.aniTxt a
+								.aniTxt reason
+							
+							a.picBgBox.mt_b.phoneShow.videoBtn(href='javascript:void(0);',data-videoId='NoqFj8AAH9Q',style='background-image: url(images/demoBg1.jpg)',data-ga='index_watchStoryVideo').gaBtn
+								.txt.wTxt
+									.playIcon_s
+									h2.mt_ss.f18 Watch the Story Video
+					.subPageContainer
+						.pageContent
+							h2.aniDivLeftIn Being a Global Supplier we believe the core reason for our existence is to innovate & create sustainable solutions essential for a better life, a cleaner environment & economic progress.
+							a.aniDivLeftIn.picBgBox.mt_b.videoBtn(href='javascript:void(0);',data-videoId='NoqFj8AAH9Q',style='background-image: url(images/demoBg1.jpg)',data-ga='index_watchStoryVideo').gaBtn
+								.txt.wTxt
+									.playIcon_s
+									h2.mt_ss.f18 Watch the Story Video
+				.page.p2.threeBlockPage
+					.container.bBlock
+						.containerBg(style='background-image: url("images/bg05.jpg")')
+						.pageContent
+							.title.handTxt.wTxt.ssTitle
+								.aniTxt Save the Ocean
+							h1.wTxt 100% Ocean Recycled Yarn
+							a.whiteBtnArr(href='product.html?page=0&rel=oceanRecycled',data-ga='index_recycledOceanPlastic').gaBtn Recycled Ocean Plastic
+					.bBlock
+						.container.sBlock
+							.containerBg(style='background-image: url("images/bg03.jpg")')
+							.pageContent
+								.title.handTxt.wTxt.ssTitle
+									.aniTxt PFC-Free
+								h1.wTxt Superior Performance & Eco-friendly
+								a.whiteBtnArr(href='product.html?page=1&rel=topDryZero',data-ga='index_TopDryZero').gaBtn TopDry Zero
+								a.whiteBtnArr(href='product.html?page=1&rel=topClean',data-ga='index_TopClean').gaBtn TopClean
+							
+						.container.sBlock
+							.containerBg(style='background-image: url("images/bg04.jpg")')
+							.pageContent
+								.title.handTxt.wTxt.ssTitle
+									.aniTxt Smart Textile
+								h1.wTxt innovation , no limit
+								a.whiteBtnArr(href='product.html?page=1&rel=dynaFeed',data-ga='index_DynaFeedSeries').gaBtn DynaFeed Series
+							
+					
+				.page.p3.twoBlockPage
+					.container
+						.containerBg(style='background-image: url("images/bg09.jpg")')
+						.pageContent
+							.title.handTxt.wTxt.bTitle
+								.aniTxt We're
+								.aniTxt in
+								.aniTxt this
+								.aniTxt together
+							.phoneShow.mt_b.indexPhoneTxtBox
+								h3.wTxt There’s no alternative to Sustainable development. We ‘walk our talk’ and see sustainability as a new way to innovate and to gain a competitive advantage.
+								a.whiteBtn(href="product.html?page=0",data-ga='index_Products').gaBtn Our Sustainability Products
+					.subPageContainer
+						.pageContent
+							h2.aniDivLeftIn There's no alternative to Sustainable development. We ‘walk our talk' and see sustainability as a new way to innovate and to gain a competitive advantage.
+							a.picBgBox.mt_b.aniDivLeftIn(href='product.html?page=0',style='background-image: url(images/btn04.jpg)',data-ga='index_Products').gaBtn
+								.txt.wTxt
+									.arrIcon_s
+									h2.mt_ss.f18 Our Sustainability Products
+
+					
+				.page.p4.twoBlockPage
+					.container
+						.containerBg(style='background-image: url("images/bg07.jpg")')
+						.pageContent
+							.title.handTxt.wTxt.mTitle
+								.aniTxt We
+								.aniTxt Love 
+								.aniTxt Challenging
+								.aniTxt Status
+								.aniTxt Quo
+							.phoneShow.mt_b.indexPhoneTxtBox
+								h3.wTxt We don't believe things have to stay the way they are and that's why at FENC, we constantly challenge the status quo. We, as a company have to evolve. It's how we innovate how we meet the needs of our customers and partners. At the same time, we remind ourselves to be focused, consistent & integrated.
+								a.whiteBtn(href="product.html?page=1",data-ga='index_Innovations').gaBtn Our Innovations
+					.subPageContainer
+						.pageContent
+							h2.aniDivLeftIn We don't believe things have to stay the way they are and that's why at FENC, we constantly challenge the status quo. We, as a company have to evolve. It's how we innovate how we meet the needs of our customers and partners. At the same time, we remind ourselves to be focused, consistent & integrated.
+							a.aniDivLeftIn.picBgBox.mt_b(href='product.html?page=1',style='background-image: url(images/btn02.jpg)',data-ga='index_Innovations').gaBtn
+								.txt.wTxt
+									.arrIcon_s
+									h2.mt_ss.f18 Our Innovations
+				.page.p5.twoBlockPage
+					.container
+						.containerBg(style='background-image: url("images/bg08.jpg")')
 						.pageContent
 							.title.handTxt.wTxt.sTitle
-								.aniTxt PFC-Free
-							h1.wTxt Superior Performance & Eco-friendly
-							a.whiteBtnArr(href='#') TopDry Zero
-							a.whiteBtnArr(href='#') TopClean
-						
-					.container.sBlock
-						.containerBg(style='background-image: url("images/bg04.jpg")')
+								.aniTxt We
+								.aniTxt simplify
+								.aniTxt Complexities
+								.aniTxt and
+								.aniTxt Amplify
+								.aniTxt Possibilities
+							.phoneShow.mt_b.indexPhoneTxtBox
+								h3.wTxt We innovate, we develop, we manufacture, we build, we spin, we weave, we knit, we dye, we recycle, we integrate, we protect the environment. When our customers and partners work with us, they know they can rely on us for one major advantage and that is to make things Simpler, SmarterCooler, Better
+								a.whiteBtn(href="product.html?page=2",data-ga='index_BestSellers').gaBtn Our Best Sellers
+					.subPageContainer
 						.pageContent
-							.title.handTxt.wTxt.sTitle
-								.aniTxt Smart Textile
-							h1.wTxt innovation , no limit
-							a.whiteBtnArr(href='#') DynaFeed Series
-						
-				
-			.page.p3.twoBlockPage
-				.container
-					.containerBg(style='background-image: url("images/bg09.jpg")')
-					.pageContent
-						.title.handTxt.wTxt.bTitle
-							.aniTxt We're
-							.aniTxt in
-							.aniTxt this
-							.aniTxt together
-						.phoneShow.mt_b.indexPhoneTxtBox
-							h3.wTxt There’s no alternative to Sustainable development. We ‘walk our talk’ and see sustainability as a new way to innovate and to gain a competitive advantage.
-							a.whiteBtn(href="product.html?page=0") Our Sustainability Products
-				.subPageContainer
-					.pageContent
-						h2.aniDivLeftIn There's no alternative to Sustainable development. We ‘walk our talk' and see sustainability as a new way to innovate and to gain a competitive advantage.
-						a.picBgBox.mt_b.aniDivLeftIn(href='product.html?page=0',style='background-image: url(images/btn04.jpg)')
-							.txt.wTxt
-								.arrIcon_s
-								h2.mt_ss.f18 Our Sustainability Products
+							h2.aniDivLeftIn We innovate, we develop, we manufacture, we build, we spin, we weave, we knit, we dye, we recycle, we integrate, we protect the environment. When our customers and partners work with us, they know they can rely on us for one major advantage and that is to make things Simpler, SmarterCooler, Better
+							a.aniDivLeftIn.picBgBox.mt_b(href='product.html?page=2',style='background-image: url(images/btn03.jpg)',data-ga='index_BestSellers').gaBtn
+								.txt.wTxt
+									.arrIcon_s
+									h2.mt_ss.f18 Our Best Sellers	
+				.page.p6.twoBlockPage
+					.container
+						.containerBg(style='background-image: url("images/bg06.jpg")')
+						.pageContent
+							.title.handTxt.wTxt.mTitle
+								.aniTxt We
+								.aniTxt make 
+								.aniTxt passion
+								.aniTxt our
+								.aniTxt job
+							.phoneShow.mt_b.indexPhoneTxtBox
+								h3.wTxt We've dedicated our daily lives to be innovative, dynamic, dependable, trusted and global, and we want our customers and partners to love us for our passion
+								a.whiteBtn(href="product.html?page=3",data-ga='index_Classics').gaBtn Our Classics 
 
-				
-			.page.p4.twoBlockPage
-				.container
-					.containerBg(style='background-image: url("images/bg07.jpg")')
-					.pageContent
-						.title.handTxt.wTxt.mTitle
-							.aniTxt We
-							.aniTxt Love 
-							.aniTxt Challenging
-							.aniTxt Status
-							.aniTxt Quo
-						.phoneShow.mt_b.indexPhoneTxtBox
-							h3.wTxt We don't believe things have to stay the way they are and that's why at FENC, we constantly challenge the status quo. We, as a company have to evolve. It's how we innovate how we meet the needs of our customers and partners. At the same time, we remind ourselves to be focused, consistent & integrated.
-							a.whiteBtn(href="product.html?page=1") Our Innovations
-				.subPageContainer
-					.pageContent
-						h2.aniDivLeftIn We don't believe things have to stay the way they are and that's why at FENC, we constantly challenge the status quo. We, as a company have to evolve. It's how we innovate how we meet the needs of our customers and partners. At the same time, we remind ourselves to be focused, consistent & integrated.
-						a.aniDivLeftIn.picBgBox.mt_b(href='product.html?page=1',style='background-image: url(images/btn02.jpg)')
-							.txt.wTxt
-								.arrIcon_s
-								h2.mt_ss.f18 Our Innovations
-			.page.p5.twoBlockPage
-				.container
-					.containerBg(style='background-image: url("images/bg08.jpg")')
-					.pageContent
-						.title.handTxt.wTxt.sTitle
-							.aniTxt We
-							.aniTxt simplily
-							.aniTxt Complexities
-							.aniTxt and
-							.aniTxt Amplify
-							.aniTxt Possibilities
-						.phoneShow.mt_b.indexPhoneTxtBox
-							h3.wTxt We innovate, we develop, we manufacture, we build, we spin, we weave, we knit, we dye, we recycle, we integrate, we protect the environment. When our customers and partners work with us, they know they can rely on us for one major advantage and that is to make things Simpler, SmarterCooler, Better
-							a.whiteBtn(href="product.html?page=2") Our Best Sellers
-				.subPageContainer
-					.pageContent
-						h2.aniDivLeftIn We innovate, we develop, we manufacture, we build, we spin, we weave, we knit, we dye, we recycle, we integrate, we protect the environment. When our customers and partners work with us, they know they can rely on us for one major advantage and that is to make things Simpler, SmarterCooler, Better
-						a.aniDivLeftIn.picBgBox.mt_b(href='product.html?page=2',style='background-image: url(images/btn03.jpg)')
-							.txt.wTxt
-								.arrIcon_s
-								h2.mt_ss.f18 Our Best Sellers	
-			.page.p6.twoBlockPage
-				.container
-					.containerBg(style='background-image: url("images/bg06.jpg")')
-					.pageContent
-						.title.handTxt.wTxt.mTitle
-							.aniTxt We
-							.aniTxt make 
-							.aniTxt passion
-							.aniTxt our
-							.aniTxt job
-						.phoneShow.mt_b.indexPhoneTxtBox
-							h3.wTxt We've dedicated our daily lives to be innovative, dynamic, dependable, trusted and global, and we want our customers and partners to love us for our passion
-							a.whiteBtn(href="product.html?page=3") Our Classics 
-
-				.subPageContainer
-					.pageContent
-						h2.aniDivLeftIn We've dedicated our daily lives to be innovative, dynamic, dependable, trusted and global, and we want our customers and partners to love us for our passion
-						a.aniDivLeftIn.picBgBox.mt_b(href='product.html?page=3',style='background-image: url(images/btn01.jpg)')
-							.txt.wTxt
-								.arrIcon_s
-								h2.mt_ss.f18 Our Classics
+					.subPageContainer
+						.pageContent
+							h2.aniDivLeftIn We've dedicated our daily lives to be innovative, dynamic, dependable, trusted and global, and we want our customers and partners to love us for our passion
+							a.aniDivLeftIn.picBgBox.mt_b(href='product.html?page=3',style='background-image: url(images/btn01.jpg)',data-ga='index_Classics').gaBtn
+								.txt.wTxt
+									.arrIcon_s
+									h2.mt_ss.f18 Our Classics
+					.phoneShow
+						#footer
+							.f1
+							.f2
+		.phoneHide
+			#footer
+				.f1
+				.f2
 		
-	.loadPicWrap(style='display:none')
-		//- img(src='images/arr.png')
 
-	
-	script(type='text/javascript', src='js/index.js')
-	script(type='text/javascript', src='js/indexPage.js')
+		
+		script(type='text/javascript', src='js/index.js')
+		script(type='text/javascript', src='js/indexPage.js')
